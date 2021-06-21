@@ -49,7 +49,7 @@ app.get("/total", (req, res) => {
 
 app.use(auth());
 
-app.get("/reports", requiredScopes('read:reports'), (req, res) => {
+app.get("/reports", (req, res) => {
   res.send(expenses);
 });
 
